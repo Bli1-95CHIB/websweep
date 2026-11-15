@@ -1,5 +1,5 @@
 # WebSweep - Custom Network Reconnaissance Tool
-
+![WebSweep Scan](screenshot.png)
 ## Description
 WebSweep is a custom Python-based network scanner designed to sweep a /24 subnet, identify open web ports, and extract HTTP server banners and HTML titles. Built from scratch for authorized penetration testing and educational purposes.
 
