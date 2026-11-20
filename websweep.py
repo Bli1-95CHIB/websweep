@@ -34,8 +34,9 @@ def scan_ip(ip):
         url = f"{protocol}://{ip}:{port}"
 
         try:
-            # verify=False ignores SSL certificate warnings for HTTPS
-            response = requests.get(url, timeout=3, verify=False)
+            # Add a fake Chrome browser header (Stealth)
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+            response = requests.get(url, timeout=3, verify=False, headers=headers)
             
             server_header = response.headers.get('Server', 'Unknown')
             soup = BeautifulSoup(response.text, 'html.parser')
