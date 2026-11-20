@@ -21,7 +21,7 @@ WebSweep is a lightweight reconnaissance tool built from scratch for authorized 
 * **💾 Automated Logging:** Automatically saves all discovered web servers and their headers to a `web_servers_found.txt` file for easy reporting.
 
 ## 🚀 Installation & Usage
-1. Clone the repo: `git clone https://github.com/B1i1-95CHIB/websweep.git`
+1. Clone the repo: `git clone https://github.com/Bli1-95CHIB/websweep.git`
 2. Install dependencies: `pip install requests beautifulsoup4`
 3. Run the tool: `python3 websweep.py`
 
